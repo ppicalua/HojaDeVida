@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja De Vida</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <canvas id="c" class="canvas"></canvas>
+
+    <nav class="menu">
+        <a href="" class="boton">
+            <i class="fa-solid fa-globe fa-xl" style="color: #ffffff;"></i>
+        </a>
+        <a href=" " id="printbutton" class="boton">
+            <i class="fa-solid fa-print fa-xl" style="color: #ffffff;"></i>
+        </a>
+        <a href=" " class="boton">
+            <i class="fa-solid fa-download fa-xl" style="color: #ffffff;"></i>
+        </a>
+    </nav>
+
+    <div class="contenedor">
+        <main class="main">
+            <aside class="sidebar">
+                <div class="nombre">
+                    <h1 class="nombre__header no-margin">CRISTIAN CAMILO AGUILERA POLANCO</h1>
+                    <p>Senior Software Engineer</p>
+                </div>
+
+                <div class="contact">
+                    <h1 class="no-margin">CONTACT</h1>
+                    <p class="contact__text">
+                        crcaguilerapo@unal.edu.co <br>
+                        3138884841
+                    </p>
+                </div>
+
+                <div class="linkedin">
+                    <h1 class="no-margin">LINKEDIN</h1>
+                    <a class="contact__text" href="www.linkedin.com/in/cristian-aguilera-p/">
+                        www.linkedin.com/in/cristian-aguilera-p
+                    </a>
+                </div>
+
+                <div class="languages">
+                    <h1 class="no-margin">LANGUAGES</h1>
+                    <p class="contact__text">
+                        Spanish native <br>
+                        English B1
+                    </p>
+                </div>
+
+                <div class="p-languages">
+                    <h1>PROGRAMMING LANGUAGES</h1>
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Pyton</li>
+                        <li>Ruby</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+
+                <div class="technologies">
+                    <H1>TECHNOLOGIES</H1>
+                    <ul>
+                        <li>Spring MVC</li>
+                        <li>Spring WebFlux</li>
+                        <li>Jakarta EE</li>
+                        <li>Mockito</li>
+                        <li>JUnit</li>
+                        <li>Gradle</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+
+                <div class="database">
+                    <h1>DATABASE</h1>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>DynamoDB</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+
+                <div class="p-interests">
+                    <h1>PROFESSIONAL INTERESTS</h1>
+                    <ul>
+                        <li>Design patterns</li>
+                        <li>SOLID Principles</li>
+                        <li>Functional Programming</li>
+                        <li>DoubleTest</li>
+                        <li>Domain Specific Language</li>
+                        <li>Metaprogramming</li>
+                        <li>ContractTesting</li>
+                        <li>Mutability & Immutability</li>
+                        <li>Cloud Computing</li>
+                    </ul>
+                </div>
+
+                <div class="references">
+                    <h1 class="mg">REFERENCES</h1>
+                    <ul class="no-margin">
+                        <li>
+                            <h1 class="leading no-margin">Adolfo Enrique Reyes</h1>
+                            <p>
+                                <em>IT Operations Associate Manager</em> <br>
+                                in Accenture <br>
+                                <span>
+                                    Email: adolfoereyes@gmail.com <br>
+                                    Tel: +57 320 8512187
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <h1 class="leading no-margin">Carlos Patiño</h1>
+                            <p>
+                                <em>Senior Public Cloud Developer</em> in Tieto <br>
+                                <span>
+                                    Email: chpatinos@gmail.com <br>
+                                    Tel: +358 41 8114983
+                                </span>
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <h1 class="leading no-margin">Juan Pablo Giron</h1>
+                            <p>
+                                <em>Resident</em> In AWS Tech U<br>
+                                <span>
+                                    Email: jpgironb@unal.edu.co <br>
+                                    Tel: +57 319 5987953
+                                </span>
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <h1 class="leading no-margin">Cristian Carreño</h1>
+                            <p>
+                                <em>Software Developer</em> In SSA Digi <br>
+                                <span>
+                                    Email: gaaplex@gmail.com <br>
+                                    Tel: +57 320 8282567
+                                </span>
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <h1 class="leading no-margin">Giovanny Albarracin</h1>
+                            <p>
+                                <em>Software Developer</em> In EPAM Anywhere <br>
+                                <span>
+                                    Email: albarracingiovanny@gmail.com <br>
+                                    Tel: +57 305 7837243
+                                </span>
+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="information">
+                <section class="about-me">
+                    <h1 class="about-me__title no-margin">ABOUT ME</h1>
+                    <p class="about-me__parrafo">
+                        I am an integral professional fascinated by my field. I have over <span>three years of
+                            experience</span> developing software for domestic and international companies both in Latin
+                        America and in Europe. My particular strengths are <span>dedication</span> and coordinating
+                        <span>team-work.</span> I treat the challenges and objectives of the company as my own and apply
+                        my knowledge and abilities to propel both personal and organizational growth. I have
+                        contributed to creating an inspiring and motivating environment by <span>taking
+                            initiative</span> to
+                        propose best practices within the company. I extend my interest in programming to my
+                        free time when I <span>actively participate in communities</span> dedicated to Sprint, Jakarta
+                        EE
+                        and Docker.
+                    </p>
+                </section> <!-- .about-me -->
+
+                <section class="education">
+                    <h1 class="title-education no-margin">EDUCATION</h1>
+
+                    <article class="education__time">
+                        <div class="time-text">
+                            <h1>2021</h1>
+                            <h1 class="education__text">2020</h1>
+                            <h1>2020</h1>
+                        </div>
+                    </article>
+
+                    <article class="education__university">
+                        <div class="education__nombre">
+                            <h1>SOFTWARE ENGINEERING <br>
+                                UNIVERSIDAD NACIONAL DE COLOMBIA
+                            </h1>
+
+                            <h1>SCRUM FOUNDATION PROFESSIONAL CERTIFICATE</h1>
+
+                            <h1>MICROSOFT AZURE FUNDAMENTALS CERTIFICATE</h1>
+                        </div>
+                    </article>
+                </section> <!-- .education -->
+
+                <section class="technical-skills">
+                    <h1 class="technical-skills__title no-margin">TECHNICAL SKILLS</h1>
+
+                    <ul>
+                        <li>Developing <span>algorithms</span> and <span>data structures.</span></li>
+                        <li>Designing data models, queries, and procedures in <span>SQL</span> and <span>NoSQL</span>
+                            data bases (MySQL,
+                            Postgres, MariaDB, Oracle Database y MongoDB).</li>
+                        <li>Provisioning and deploying in development and production environments with Docker,
+                            <span>Docker Compose</span> and <span>Kubernetes.</span></li>
+                        <li>Automating software life-cycle with <span>CI/CD</span> pipelines (GitHub Action).</li>
+                        <li>Designing software: <span>DDD</span> and <span>TDD.</span></li>
+                        <li>Configuring <span>SSL</span> certificated with <span>Nginx y Traefik.</span></li>
+                        <li>Designing software architecture: <span>Layered/n-Tier, Serverless</span> and
+                            <span>Microservices.</span></li>
+                        <li>Managing Public Cloud: <span>IaaS, PaaS and SaaS.</span></li>
+                    </ul>
+                </section> <!-- .technical-skills -->
+
+                <section class="experience">
+                    <h1 class="title-experience no-margin">EXPERIENCE</h1>
+
+                    <article class="experience__time">
+                        <div class="experience__text">
+                            <p class="experience__parrafo1">
+                                October, 2022 - Present <br>
+                                Edwin Ayala <br>
+                                Engineering Manager
+                            </p>
+
+                            <p class="experience__parrafo2">
+                                January, 2021 - October, 2022 <br>
+                                Sakari Stenudd <br>
+                                Senior Software Architect
+                            </p>
+
+                            <p class="experience__parrafo3">
+                                July, 2020 - Dicember, 2020 <br>
+                                Pedro Alexander Higuera <br>
+                                Software Architect
+                            </p>
+
+                            <p class="experience__parrafo4">
+                                January, 2020 - July, 2020 <br>
+                                Adolfo Enrique Reyes <br>
+                                IT Operations Associate
+                                Manager
+                            </p>
+                        </div>
+                    </article> <!-- .experience__time -->
+
+                    <article class="experience__company">
+                        <div class="text__experience">
+                            <div class="text__experience-content">
+                                <h1 class="leading no-margin">LuloBank</h1>
+                                <p>
+                                    I have implemented <span></span>observability with Open
+                                    Telemetrics in microservices architecture, as well as
+                                    feature flags in company software to mock system
+                                    responses. I have participated in multiple migrations,
+                                    including from <span>ECS</span> to <span>EKS</span> cluster, and from
+                                    <span>Redis</span> to
+                                    <span>DynamoDB.</span>
+                                </p>
+                            </div>
+
+                            <div class="text__experience-content">
+                                <h1 class="leading no-margin">SSA Digi</h1>
+                                <p>
+                                    I was a Full Stack developer working with <span>Java, PHP</span>
+                                    and <span>JavaScript.</span> I worked extensively with <span>CI/CD,</span>
+                                    Docker and <span>API Restful.</span> I managed migrations from
+                                    virtual machines to environments with containers
+                                    (<span>Docker</span> and <span>Docker Compose</span>) to increase availability,
+                                    improve provisioning and the updating of dependencies.
+                                    I collaborated continuously with clients to define,
+                                    document, and maintain <span>requirements.</span>
+                                </p>
+                            </div>
+
+                            <div class="text__experience-content">
+                                <h1 class="leading no-margin">Universidad Nacional de Colombia - UIFCE</h1>
+                                <p>
+                                    I worked as a back-end and front-end developer using
+                                    <span>Vuejs</span> and <span>PHP,</span> standing out for compromise and good
+                                    attitude. I created a chat microservice based in <span>NoSQL</span>
+                                    Database and <span>Sockets.</span>
+                                </p>
+                            </div>
+
+                            <div class="text__experience-content">
+                                <h1 class="leading no-margin">Accenture</h1>
+                                <p>
+                                    I was in charge of the <span></span>Middleware area working with
+                                    tools such as Jboss Fuse y Nagios. I created a graphic
+                                    interface for remote execution of commands through
+                                    <span>Ansible</span> y Nagios. This application applied <span>desing
+                                        patterns</span> such as: <span>Singleton, Dependency Injection</span>
+                                    and <span>Adstract Factory.</span>
+                                </p>
+                            </div>
+                        </div> <!-- .text__experience -->
+                    </article> <!-- .experience__company -->
+                </section> <!-- .experience -->
+            </div> <!-- .information -->
+        </main>
+    </div> <!-- .contenedor -->
+
+    <script src="/js/imprimir.js"></script>
+    <script src="/js/all.js"></script>
+    <script src="/js/matrix.js"></script>
+</body>
+
+</html>
