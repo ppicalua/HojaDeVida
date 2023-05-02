@@ -27,7 +27,7 @@ body {
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;    
     margin: 0 auto;
-    overflow-x: hidden;
+    overflow-x: hidden;    
 }
 
 .canvas {
@@ -46,6 +46,14 @@ body {
 .contenedor {    
     width: 120rem;    
     margin: 0 auto;       
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
 }
 
 a {
