@@ -3,7 +3,7 @@ var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 
 //making the canvas full screen
-c.height = 1910;
+c.height = 1950;
 c.width = window.innerWidth;
 
 //chinese characters - taken from the unicode charset
