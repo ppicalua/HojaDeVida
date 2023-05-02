@@ -1,4 +1,5 @@
-/**--- Declaracion de variables Para 
+@media screen {
+    /**--- Declaracion de variables Para 
     el tipo de fuente y colores ---**/
 :root {    
     --fuenteHeading: 'PT Sans', sans-serif;
@@ -26,6 +27,7 @@ body {
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;    
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .canvas {
@@ -35,8 +37,7 @@ body {
 
 /** Globales **/
 .contenedor {    
-    width: 120rem;
-    height: auto;
+    width: 120rem;    
     margin: 0 auto;       
 }
 
@@ -46,12 +47,12 @@ a {
 
 p {    
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.5;   
 }
 
 h1 {
     font-family: var(--fuenteHeading);    
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 img {
@@ -116,14 +117,16 @@ span {
     grid-template-areas: "sidebar information";
     grid-template-columns: 33% 66.35%;
     column-gap: 2.5rem;   
-    border-radius: 2.5rem;  
+    border-radius: 1.5rem;  
 } 
 
 .sidebar{
     grid-column: sidebar;
     background-color: var(--verde);
-    border-top-left-radius: 2.5rem;
-    border-bottom-left-radius: 2.5rem;
+    border-top-left-radius: 16rem 30rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 30rem 16rem;
+    border-bottom-left-radius: 1.5rem;
 }
 
 .information {
@@ -214,7 +217,7 @@ span {
 .education {
     display: grid;
     grid-template-areas: "izq rigth";
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     column-gap: 2rem;
     margin-top: 3rem;
 }
@@ -309,11 +312,11 @@ span {
 }
 
 .experience__parrafo2 {
-    margin-top: 11rem;
+    margin-top: 11.7rem;
 }
 
 .experience__parrafo3 {
-    margin-top: 18.5rem;
+    margin-top: 19rem;
 }
 
 .experience__parrafo4 {
@@ -323,4 +326,297 @@ span {
 .text__experience-content {
     margin-top: 1rem;
     width: 90%;
+}
+}
+
+@media print {
+    :root {    
+        --fuenteHeading: 'PT Sans', sans-serif;
+        --fuenteParrafos: 'Open Sans', sans-serif;
+    
+        --verde: #689c6e;
+        --blanco: #ffffff;
+        --negro: #000000;
+    }
+    
+    html {
+        box-sizing: border-box;
+        font-size: 66%;           
+    }
+    
+    *, *:before, *:after {
+        box-sizing: inherit;          
+    }  
+    
+    .canvas {
+        display: none;
+        position: absolute;     
+    }
+
+    .menu {
+        display: none             
+    }
+
+    /** Globales **/
+    .contenedor { 
+        position: absolute;   
+        width: 120rem;                          
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+        margin: 0;
+        line-height: 1.5;        
+    }
+    
+    h1 {
+        font-family: var(--fuenteHeading);    
+        font-size: 1.6rem;
+    }   
+    
+    ul {
+        list-style: url(../img/item.png);
+    }
+    
+    li {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+    
+    span {
+        font-weight: 700;
+    }   
+    
+    .no-margin {
+        margin: 0;    
+    }
+    
+    .leading {
+        line-height: 1.2;
+    }    
+    
+    /** CONTENIDO PRINCIPAL **/
+    /* Para dividir la hoja de vida en dos columnas*/
+    .main{
+        background-color: var(--blanco);
+        display: grid;
+        grid-template-areas: "sidebar information";
+        grid-template-columns: 30% 70%;
+       /* border: 2.5px solid var(--negro);                  */
+    } 
+    
+    .sidebar{
+        grid-column: sidebar;
+        background-color: var(--verde); 
+        border-right: 2.5px solid var(--negro); 
+        border-top-left-radius: 16rem 30rem;
+        border-bottom-left-radius: 1.5rem;      
+    }
+    
+    .information {
+        grid-column: information;
+    }
+    
+    /**--- SIDEBAR ---**/
+    .nombre {    
+        text-align: center;
+        margin-top: 2rem;
+        line-height: 0.6;
+    }
+    
+    .nombre__header {
+        font-size: 1.6rem;
+    }
+    
+    .contact {
+        margin-top: 1.5rem;
+        margin-left: 4rem;    
+    }
+    
+    .linkedin {
+        margin-top: 1.5rem;
+        margin-left: 4rem;    
+    }
+    
+    .languages {
+        margin-top: 1.5rem;
+        margin-left: 4rem;
+        line-height: 0.6;
+    }
+    
+    .contact__text {
+        padding-left: 1rem;
+        line-height: 1.3;
+        color: var(--negro);
+    }
+    
+    /*--- Programming Languages ---*/
+    .p-languages {
+        margin-top: 1.5rem;
+        margin-left: 4rem;
+    }
+    
+    .technologies {
+        margin-top: 1.5rem;
+        margin-left: 4rem;
+    }
+    
+    .database {
+        margin-top: 1.5rem;
+        margin-left: 4rem;
+    }
+    
+    /*--- Professional Interests ---*/
+    .p-interests {
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+    
+    .references {
+        margin-top: 2rem;    
+        margin-left: 4rem;    
+    }
+    /*--- Fin Del Sidebar ---*/
+    
+    /** INFORMATION **/
+    
+    /*--- Seccion Sobre Mi ----*/
+    .about-me {
+        margin-top: 1rem;
+    }
+    
+    .about-me__title {
+        border-bottom: 2.5px solid var(--negro);
+        padding-left: 1rem;
+        margin: 0 8rem 1.5rem 4.5rem;
+        line-height: 1.5;
+    }
+    
+    .about-me__parrafo {
+        padding: 0 8rem 0.8rem 1rem;
+        margin: 0 0 1rem 5.5rem;
+        width: 80%;
+    }
+    
+    /*--- Seccion Educacion ---*/
+    .education {
+        display: grid;
+        grid-template-areas: "izq rigth";
+        grid-template-columns: 18% 82%;
+        column-gap: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .title-education {
+        grid-column: 1 / 4;
+        border-bottom: 2.5px solid var(--negro);
+        padding-left: 1rem;
+        margin: 0 8rem 1.5rem 4.5rem;
+        line-height: 1.5;
+    }
+    
+    .education__time {
+        grid-column: izq;            
+    }
+    
+    .education__university {
+        grid-column: rigth;
+    }
+    
+    .time-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 5.5rem;
+    }
+    
+    .education__nombre {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .education__text {
+        margin-top: 2rem;
+    }
+    
+    /*--- Seccion Habilidades Tecnicas ---*/
+    .technical-skills {    
+        padding: 0 0 0.8rem 0.5rem;
+        margin: 1.2rem 8rem 1.2rem 4.5rem;   
+        width: 76%;     
+    }
+    
+    .technical-skills__title {
+        margin-bottom: 2rem;
+        border-bottom: 2.5px solid var(--negro);
+        padding-left: 0.5rem;
+        line-height: 1.5;
+    }
+    
+    /*--- Seccion Experiencia ---*/
+    .experience {
+        display: grid;
+        grid-template-areas: "izq rigth";
+        grid-template-columns: 1.2fr 2.8fr;
+        grid-auto-flow: column;
+        column-gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .title-experience {
+        grid-column: 1 / 4;
+        border-bottom: 2.5px solid var(--negro);
+        padding-left: 1rem;
+        margin: 0 8rem 2.5rem 4.5rem;
+        line-height: 1.5;
+    }
+    
+    .experience__time {
+        grid-column: izq;
+        border-right: 2.5px solid var(--negro);
+        text-align: right;    
+    }
+    
+    .experience__company {
+        grid-column: rigth;    
+    }
+    
+    .experience__text {
+        display: flex;
+        flex-direction: column;
+        padding-right: 2rem;
+    }
+    
+    .text__experience {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .experience__parrafo1 {
+        margin-top: 1rem;
+    }
+    
+    .experience__parrafo2 {
+        margin-top: 6.4rem;
+    }
+    
+    .experience__parrafo3 {
+        margin-top: 13.5rem;
+    }
+    
+    .experience__parrafo4 {
+        margin-top: 4.5rem;
+    }
+    
+    .text__experience-content {
+        margin-top: 1rem;
+        width: 77.2%;
+    }  
 }
