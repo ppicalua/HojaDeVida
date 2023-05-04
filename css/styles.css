@@ -7,7 +7,7 @@
 
     --verde: #689c6e;
     --blanco: #ffffff;
-    --negro: #000000;
+    --negro: #131313;
 }
 
 html {
@@ -59,10 +59,6 @@ p {
 h1 {
     font-family: var(--fuenteHeading);    
     font-size: 1.8rem;
-}
-
-img {
-    max-width: 100%;
 }
 
 ul {
@@ -126,7 +122,8 @@ span {
 
 .sidebar{
     grid-column: sidebar;
-    background-color: var(--verde);    
+    background-color: var(--negro); 
+    color: var(--blanco);   
     border-top-left-radius: 1.5rem;    
     border-bottom-left-radius: 1.5rem;
 }
@@ -802,35 +799,28 @@ span {
     
         --verde: #689c6e;
         --blanco: #ffffff;
-        --negro: #000000;
+        --negro: #131313;
     }
     
-    html {
-        box-sizing: border-box;
+    html {        
         font-size: 65.7%;           
-    }
-    
-    *, *:before, *:after {
-        box-sizing: inherit;          
     }  
     
     .canvas {
-        display: none;
-        position: absolute;     
+        display: none;          
     }
 
     .menu {
         display: none             
     }
 
-    /** Globales **/
-    .contenedor { 
-        position: absolute;   
-        width: 120rem;                          
+    /** Globales **/    
+    .contenedor {    
+        width: 120rem;    
+        margin: 0 auto;       
     }
     
-    a {
-        text-decoration: none;
+    a {       
         font-size: 1.5rem;
     }
     
@@ -867,7 +857,7 @@ span {
     }    
     
     /** CONTENIDO PRINCIPAL **/
-    /* Para dividir la hoja de vida en dos columnas*/
+    /* Para dividir la hoja de vida en dos columnas */
     .main{
         background-color: var(--blanco);
         display: grid;
@@ -889,7 +879,7 @@ span {
         border-left: 2.5px solid var(--negro);
     }
     
-    /**--- SIDEBAR ---**/
+    /**--- SIDEBAR --- **/
     .nombre {    
         text-align: center;
         margin-top: 1.5rem;
@@ -951,7 +941,7 @@ span {
     
     /** INFORMATION **/
     
-    /*--- Seccion Sobre Mi ----*/
+    /*--- Seccion Sobre Mi ---*/
     .about-me {
         margin-top: 0.6rem;
     }
@@ -1063,8 +1053,8 @@ span {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-    }
-    
+    }    
+
     .experience__parrafo1 {
         margin-top: 1rem;
     }

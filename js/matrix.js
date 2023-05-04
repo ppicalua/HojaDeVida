@@ -28,7 +28,7 @@ function draw()
     ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
     ctx.fillRect(0, 0, c.width, c.height);
 
-    ctx.fillStyle = "#42C920";//green text #42C920
+    ctx.fillStyle = "#ffffff";//green text #42C920
     ctx.font = font_size + "px arial";
     //looping over drops
     for(var i = 0; i < drops.length; i++)
